@@ -1,0 +1,399 @@
+
+<parameters>
+    <index>/home/ec2-user/SageMaker/indri/ClueWeb09_English_1_storeDocs_false</index>
+    <trecFormat>true</trecFormat>
+    <count>20</count>
+    <fbDocs>10</fbDocs>
+    <query>
+        <text>#weight (  2.0 #combine (US tax code 403  b  eligibility)  1.0 #combine (US tax code 403  b )  )</text>
+        <number>1</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (help retirement plan)  1.0 #combine (personal IRA or 403  b )  0.5 #combine (personal IRA v 403  b )  0.25 #combine (personal IRA)  0.125 #combine (403 b  retirement plan)  )</text>
+        <number>2</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (best programming language for beginners)  1.0 #combine (teach yourself programming)  )</text>
+        <number>3</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (pocono mountains region national park)  1.0 #combine (pocono mountains region activities)  0.5 #combine (pocono mountains region things to do)  0.25 #combine (pocono mountains region)  )</text>
+        <number>4</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (pocono mountains shopping)  1.0 #combine (pocono mountains park)  0.5 #combine (pocono mountains)  )</text>
+        <number>5</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (pocono mountains chateau resort directions)  1.0 #combine ( chateau resort getting to)  0.5 #combine (pocono mountains chateau resort getting to)  0.25 #combine (pocono mountains chateau resort attractions)  0.125 #combine (pocono mountains chateau resort)  0.0625 #combine (pocono mountains camelbeach hotel)  0.03125 #combine (pocono mountains camelbeach)  0.015625 #combine (pocono mountains pennsylvania hotels)  0.0078125 #combine (pocono mountains pennsylvania things to do)  0.00390625 #combine (pocono mountains pennsylvania hotels)  0.001953125 #combine (pocono mountains pennsylvania)  )</text>
+        <number>6</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Philidelphia car rental)  1.0 #combine (skytop lodge directions)  0.5 #combine (pocono resort)  )</text>
+        <number>7</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (designer dogs types)  1.0 #combine (designer dogs)  )</text>
+        <number>8</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (designer dogs crossbreeds)  1.0 #combine (designer dogs)  )</text>
+        <number>9</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (designer dogs )  1.0 #combine (designer dogs moral)  )</text>
+        <number>10</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (kursk UK subs in area)  1.0 #combine (kursk 2000 countries express regret)  0.5 #combine (kursk countries express regret)  0.25 #combine (kursk sink express regret)  0.125 #combine (kursk submarine commander)  0.0625 #combine (kursk commander)  0.03125 #combine (russian submarine Kursk on board commander)  0.015625 #combine (russian submarine Kursk fleet)  0.0078125 #combine (russian submarine Kursk sinks)  )</text>
+        <number>11</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (russiatoday ru)  1.0 #combine (Kursk russia today)  )</text>
+        <number>12</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (kursk russian sinking US submarines)  1.0 #combine (kursk russian sinking)  )</text>
+        <number>13</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Kursk submarine 2000 politics)  1.0 #combine (Kursk submarine 2000)  )</text>
+        <number>14</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (russia politics kursk submarine)  1.0 #combine (russian politics kursk submarine)  )</text>
+        <number>15</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Kursk   Barents sea   causes)  1.0 #combine (Kursk   Barents see   Russian politics   causes)  0.5 #combine (Kursk   Barents see   Russian politics   causes)  0.25 #combine (Kursk   Barents see   Russian politics)  )</text>
+        <number>16</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (indian government policy miss universe)  1.0 #combine (india government policy miss universe)  )</text>
+        <number>17</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (politics 1994 2000  Indian Miss Universe)  1.0 #combine (politics Indian Miss Universe)  0.5 #combine (Indian politics   Miss Universe)  )</text>
+        <number>18</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (port arthur massacre victims)  1.0 #combine (port arthur massacre)  )</text>
+        <number>19</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (port arthur massacre)  1.0 #combine (port arthur)  )</text>
+        <number>20</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Port Arther Massacre Australia victims names)  1.0 #combine (Port Arther Massacre Australia names died)  0.5 #combine (Port Arther Massacre Australia)  0.25 #combine (Port Arther Massacre)  )</text>
+        <number>21</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (gun homicides australia after 1996)  1.0 #combine (port arthur massacre australia)  0.5 #combine (port arthur massacre)  0.25 #combine (martin bryant port arthur massacre)  0.125 #combine (gun homicides australia)  )</text>
+        <number>22</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (port arthur martin bryant gun crime)  1.0 #combine (port arthur martin bryant)  )</text>
+        <number>23</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (france vs brazil 1998 stadium)  1.0 #combine (france 1998 final)  0.5 #combine (france world cup winners)  )</text>
+        <number>24</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (coach france football team world cup 1998)  1.0 #combine (stadium final world cup 1998)  0.5 #combine (nickname for france football team in world cup 1998)  0.25 #combine (france versus who world cup 1998 final score)  0.125 #combine (france versus who world cup 1998)  0.0625 #combine (when france win world cup)  0.03125 #combine (when france win world cuo)  )</text>
+        <number>25</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (france world cup 1998 stock markets)  1.0 #combine (france world cup 1998 reactions)  0.5 #combine (france world cup 1998)  )</text>
+        <number>26</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (french world cup 1998)  1.0 #combine (stock market response to 1998 world cup)  0.5 #combine (stock market response to 1988 world cup)  )</text>
+        <number>27</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (france world cup 98)  1.0 #combine (france world cup 98 reaction)  0.5 #combine (france world cup 98 reaction stock market)  )</text>
+        <number>28</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (world film industries)  1.0 #combine (bollywood oscars)  0.5 #combine (bollywood beverly hills)  0.25 #combine (bollywood stars)  0.125 #combine (bollywood)  )</text>
+        <number>29</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (bollywood oscars)  1.0 #combine (bollywood facts)  )</text>
+        <number>30</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (bollywood promote growth)  1.0 #combine (bollywood legislation)  0.5 #combine (bollywood growth government policy)  )</text>
+        <number>31</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (bollywood law)  1.0 #combine (bollywood legislation)  )</text>
+        <number>32</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (bollywood legislation growth government)  1.0 #combine (bollywood legislation growth)  )</text>
+        <number>33</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (the company new york stock exchange)  1.0 #combine (the company)  )</text>
+        <number>34</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (merck and co policies)  1.0 #combine (merck and co)  0.5 #combine (merck and co  lobbying)  0.25 #combine (merck  and amp amp  co  lobbying)  0.125 #combine (merck  and amp amp  co  lobbying)  )</text>
+        <number>35</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (merck lobbying)  1.0 #combine (Merck lobbyist united states policy legislation)  0.5 #combine (Merck lobby united states policy)  )</text>
+        <number>36</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Merck lobbying US policy)  1.0 #combine (Merck lobbists)  )</text>
+        <number>37</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Kurosawa s wife)  1.0 #combine (Kurosawa)  )</text>
+        <number>38</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Akira Kurosawa chinese cinema)  1.0 #combine (Akira Kurosawa indian cinema)  0.5 #combine (Akira Kurosawa influence india)  0.25 #combine (Akira Kurosawa influence)  )</text>
+        <number>39</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (water turbine cost per kwh)  1.0 #combine (water turbine efficiency )  )</text>
+        <number>40</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Newton s third law)  1.0 #combine (Newton s second law)  0.5 #combine (types of water turbines)  )</text>
+        <number>41</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (comparison of water turbine types)  1.0 #combine (effective water turbines types)  0.5 #combine (water turbines electricity generation cost per kWh )  0.25 #combine (water turbines replace fossil fuels)  0.125 #combine (water turbines relation to newtons law)  0.0625 #combine (water turbines)  )</text>
+        <number>42</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (newtons laws on water turbines)  1.0 #combine (types of water turbines)  0.5 #combine (working mechanism of water turbines)  )</text>
+        <number>43</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (hydroelectric power environment)  1.0 #combine (hydroelectric power)  0.5 #combine (hydropower renewable resource)  )</text>
+        <number>44</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (hydropower efficiency)  1.0 #combine (consequences of hydroelectric dam)  )</text>
+        <number>45</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (pseudocyesis psychology)  1.0 #combine (pseudocyesis)  )</text>
+        <number>46</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (pseudocyesis history)  1.0 #combine (pseudocyesis epidemiology)  0.5 #combine (pseudocyesis)  )</text>
+        <number>47</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Pseudocyesis causes research)  1.0 #combine (Pseudocyesis research)  )</text>
+        <number>48</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Pseudoscyesis )  1.0 #combine (Pseudoscyesis causes)  0.5 #combine (Pseudoscyesis causes review)  )</text>
+        <number>49</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (causes of false preganancy)  1.0 #combine (pseudocyesis causes new research)  0.5 #combine (pseudocyesis causes)  0.25 #combine (pseudocyesis)  )</text>
+        <number>50</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Pseudocyesis pregnancy wiki)  1.0 #combine (Pseudocyesis wiki)  )</text>
+        <number>51</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (psuedocyesis pathology)  1.0 #combine (psuedocyesis pathogenesis)  0.5 #combine (psuedocyesis causes study)  0.25 #combine (psuedocyesis causes research)  0.125 #combine (psuedocyesis causes)  0.0625 #combine (psuedocyesis)  )</text>
+        <number>52</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (servering spinal cord consequenses)  1.0 #combine (servering spinal cord paralysis)  )</text>
+        <number>53</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (silicone roof coating alternatives)  1.0 #combine (silicone roof coating alternatives cooling)  )</text>
+        <number>54</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (roof coating house temperature down uk )  1.0 #combine (silicone roof coating uk alternatives)  0.5 #combine (silicone roof coating uk)  0.25 #combine (silicone roof coating)  )</text>
+        <number>55</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (roof coating lower temperature)  1.0 #combine (roof coating solutions)  0.5 #combine (roof coating tutorial)  0.25 #combine (silicon roof coating tutorial)  0.125 #combine (silicon roof coating use)  0.0625 #combine (silicon roof coating)  )</text>
+        <number>56</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (radiant barrier  uk)  1.0 #combine (radiant barrier)  0.5 #combine (passive solar cooling  uk)  0.25 #combine (passive solar cooling)  0.125 #combine (self regulating house temperature)  )</text>
+        <number>57</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (how roof installation prevent heat)  1.0 #combine (install roof insulation)  )</text>
+        <number>58</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (cool roof)  1.0 #combine (air condition roof)  )</text>
+        <number>59</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (attic insulation airconditioning costs)  1.0 #combine (reduce airconditioning)  )</text>
+        <number>60</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Indian wedding customs)  1.0 #combine (Indian wedding culture rituals)  )</text>
+        <number>61</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Indian wedding customs)  1.0 #combine (Indian wedding rituals)  )</text>
+        <number>62</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (shinto wedding rituals)  1.0 #combine (buddhist wedding rituals)  0.5 #combine (wedding traditions buddhism)  )</text>
+        <number>63</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (How do sunspots effect us)  1.0 #combine (Are sunspots local burnouts)  0.5 #combine (Sunspot life cycle)  0.25 #combine (Sunspots Environmental effects)  0.125 #combine (Sunspots Wikipedia)  )</text>
+        <number>64</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (sunspots affect climate changes)  1.0 #combine (sunspots climate changes)  )</text>
+        <number>65</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (depression nhs)  1.0 #combine (depression)  )</text>
+        <number>66</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Depression Definition Merck Manual)  1.0 #combine (Depression Definition)  )</text>
+        <number>67</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (depression symptoms treatment nhs)  1.0 #combine (depression symptoms treatment)  )</text>
+        <number>68</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (depression diagnosis  sleep   help  support  uk)  1.0 #combine (depression diagnosis  sleep   help  support)  )</text>
+        <number>69</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (how to help depressed person)  1.0 #combine (depression symptoms)  )</text>
+        <number>70</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (dehumidifiers technical specifications uk)  1.0 #combine (dehumidifiers technical specifications)  0.5 #combine (dehumidifiers things to consider)  0.25 #combine (dehumidifiers things to condiser)  0.125 #combine (dehumidifiers)  )</text>
+        <number>71</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (whole house dehumidifier)  1.0 #combine (dehumidifier)  )</text>
+        <number>72</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (dehumidifiers timer frost free)  1.0 #combine (dehumidifiers )  )</text>
+        <number>73</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (dehumidifier comparison which )  1.0 #combine (dehumidifier comparison UK)  0.5 #combine (dehumidifier comparison)  )</text>
+        <number>74</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (dehumidifier comparison ratings uk)  1.0 #combine (dehumidifier comparison ratings)  )</text>
+        <number>75</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (buy dehumidifier  reviews  uk)  1.0 #combine (buy dehumidifier  reviews)  )</text>
+        <number>76</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (dehumidifier any good  uk)  1.0 #combine (dehumidifier any good )  )</text>
+        <number>77</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (traditional Swahili dishes)  1.0 #combine (Swahili dishes)  )</text>
+        <number>78</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (traditional swahili recipes)  1.0 #combine (swahili recipes)  )</text>
+        <number>79</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (swahili dish kenya picture)  1.0 #combine (swahili dish)  )</text>
+        <number>80</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (wikipedia kenya)  1.0 #combine (recipes swahili cusine)  )</text>
+        <number>81</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Kenyan recipe)  1.0 #combine (Traditional Swahili meals)  )</text>
+        <number>82</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (traditional swahili recipe)  1.0 #combine (www allrecipes com)  0.5 #combine (kenya cooking traditional swahili)  0.25 #combine (kenya cooking traditional)  )</text>
+        <number>83</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (kenya swahili traditional food recipes)  1.0 #combine (swahili traditional food recipes)  )</text>
+        <number>84</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (scientific glass blowing)  1.0 #combine (glass blowing science)  0.5 #combine (glass blowing)  )</text>
+        <number>85</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (glass blowing science)  1.0 #combine (scientific glass blowing history)  0.5 #combine (scientific glass blowing)  )</text>
+        <number>86</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (scientific glassblowing history Edison)  1.0 #combine (scientific glassblowing history)  0.5 #combine (glassblowing history)  )</text>
+        <number>87</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (hermetic sealing services)  1.0 #combine (test tube sealing services)  )</text>
+        <number>88</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (sample tube sealing expert)  1.0 #combine (sample tube sealing services)  0.5 #combine (sample tube sealing)  )</text>
+        <number>89</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (autoimmune disease )  1.0 #combine (autoimmune disease sport)  0.5 #combine (collagen vascular diease sport)  0.25 #combine (collagen vascular diease)  )</text>
+        <number>90</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (collagen vascular disease )  1.0 #combine (collagen vascular disease sport)  0.5 #combine (collagen vascular disease sport)  0.25 #combine (collagen vascular disease active lifestyle)  0.125 #combine (impact of collagen vascular disease)  0.0625 #combine (collagen vascular disease)  )</text>
+        <number>91</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (connecticut fire academy)  1.0 #combine (connecticut fire academy established)  0.5 #combine (connecticut fire academy)  )</text>
+        <number>92</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (connecticut fire academy)  1.0 #combine (connecticut fire department)  0.5 #combine (connecticut fire academy)  )</text>
+        <number>93</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Connecticut Fire Academy)  1.0 #combine (Connecticut Fire Academy fireman)  0.5 #combine (connecticut fire academy fireman)  0.25 #combine (connecticut fire academy wiki)  0.125 #combine (connecticut fire academy)  )</text>
+        <number>94</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (where is the Connecticut Fire Academy   )  1.0 #combine (what is the Connecticut Fire Academy   )  0.5 #combine (Connecticut Fire Academy  )  )</text>
+        <number>95</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (connecticut fire academy )  1.0 #combine (connecticut fire academy training )  )</text>
+        <number>96</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (Connecticut Fire Academy skills)  1.0 #combine (Connecticut Fire Academy training)  0.5 #combine (Connecticut Fire Academy training)  )</text>
+        <number>97</number>
+    </query>
+    <query>
+        <text>#weight (  2.0 #combine (connecticut fire academy training)  1.0 #combine (connecticut fire academy training)  )</text>
+        <number>98</number>
+    </query>
+</parameters>

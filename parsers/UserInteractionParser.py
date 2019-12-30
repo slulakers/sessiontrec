@@ -117,6 +117,7 @@ def parse_session_queries_2012(path_to_file="/home/ec2-user/SageMaker/data/sessi
     parser = etree.XMLParser(encoding="utf-8")
     root_doc = etree.fromstring( content, parser=parser )
     for session in root_doc:
+        session_no = session.attrib['num']
         topic = session.find("topic") # Not being used
         topic_no = topic.attrib['num']
         interactions = session.findall("interaction")
@@ -126,7 +127,7 @@ def parse_session_queries_2012(path_to_file="/home/ec2-user/SageMaker/data/sessi
             parsed_interactions.append(user_interaction)
             
         current_query = session.find("currentquery").find("query").text
-        yield(topic_no, current_query, parsed_interactions)
+        yield(session_no, current_query, parsed_interactions)
     
     
     

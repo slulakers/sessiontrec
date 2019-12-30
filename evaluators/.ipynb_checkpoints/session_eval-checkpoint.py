@@ -25,6 +25,8 @@
 
 
 """Library that defines several classes for session track evaluation.
+Eaxample;
+python evaluators/session_eval_main.py --qrel_file=/home/ec2-user/SageMaker/data/qrels.txt  --mapping_file=/home/ec2-user/SageMaker/data/sessiontopicmap.txt  --run_file=/home/ec2-user/SageMaker/indri/results.txt
  """
 
 __author__ = 'ekanoulas@gmail.com (Evangelos Kanoulas)'
@@ -53,7 +55,7 @@ def dsum(a_dict):
     a_dict: key -> value
   """
   y = 0.0
-  for value in a_dict.itervalues():
+  for value in a_dict.values():
     y += value
   return y
 
@@ -104,8 +106,8 @@ class QrelReader:
     Returns: 
       rel_judgments: topic, document -> grade (integer).
     """
-    for topic, document_rel in rel_judgments.iteritems():
-      for document, relevance in document_rel.iteritems():
+    for topic, document_rel in rel_judgments.items():
+      for document, relevance in document_rel.items():
         if str(rel_judgments[topic][document]) in mapping:
           rel_judgments[topic][document] = (
               int(mapping[str(rel_judgments[topic][document])]))
@@ -238,10 +240,10 @@ class RankingReader:
     if self.dup_file is not None:
       dup = self._MapDupDocumentsToNonrelevance()
     ranking_rel = defaultdict(list)
-    for session, documents in ranking_docs.iteritems():
+    for session, documents in ranking_docs.items():
       for document in documents:
         topic = self.session_topic[session]
-        if (not dict(document in rel_judgments[topic])  or
+        if (not document in dict(rel_judgments[topic])  or
             document in dup[session] ):
           ranking_rel[session].append(0)
         else:
@@ -392,11 +394,11 @@ class SessionEvaluator(MeasureEvaluator):
     descending order.
     """
     ideal_ranking_topic = defaultdict(list)
-    for topic, document_rel in self.rel_judgments.iteritems():
-      for document, relevance in document_rel.iteritems():
+    for topic, document_rel in self.rel_judgments.items():
+      for document, relevance in document_rel.items():
         ideal_ranking_topic[topic].append(relevance)
       ideal_ranking_topic[topic].sort(reverse=True)
-    for session, topic in self.session_topic.iteritems():
+    for session, topic in self.session_topic.items():
       if ((not self.goal or self.goal == self.session_goal[session])
           and (not self.product or
                self.product == self.session_product[session])):
@@ -413,19 +415,19 @@ class SessionEvaluator(MeasureEvaluator):
       grades: [0, 1, ...], the relevance grades in the qrel 
     """
     relevance_counts_topic = defaultdict(dict)
-    for topic, document_rel in self.rel_judgments.iteritems():
+    for topic, document_rel in self.rel_judgments.items():
       # The loop just initializes the counts for all grades.  
       for grade in grades:
         relevance_counts_topic[topic][str(grade)] = 0
       relevance_counts_topic[topic]['rel'] = 0
       relevance_counts_topic[topic]['nonrel'] = 0
-      for document, relevance in document_rel.iteritems():
+      for document, relevance in document_rel.items():
         relevance_counts_topic[topic][str(relevance)] += 1
         if int(relevance) > 0:
           relevance_counts_topic[topic]['rel'] += 1
         else:
           relevance_counts_topic[topic]['nonrel'] += 1
-    for session, topic in self.session_topic.iteritems():
+    for session, topic in self.session_topic.items():
       self.relevance_counts[session] = relevance_counts_topic[topic]
   
   def ComputeMeasures(self, cutoff=10):
@@ -441,7 +443,7 @@ class SessionEvaluator(MeasureEvaluator):
     err_at_k = {}
     nerr = {}
     nerr_at_k = {}
-    for session, rel_list in self.ranking_rel.iteritems():
+    for session, rel_list in self.ranking_rel.items():
       if self.relevance_counts[session]['rel'] > 0:
         num_sessions_rel += 1  
         precision_at_k[session] = self.PrecisionAtK(rel_list, cutoff)
